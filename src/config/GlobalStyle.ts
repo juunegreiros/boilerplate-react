@@ -8,9 +8,9 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeTypes }>`
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors.purple};
+    background-color: ${({ theme }) => theme.colors.purple100};
     font-family: 'Roboto', sans-serif;
-    color: ${({ theme }) => theme.colors.lightPink};
+    color: ${({ theme }) => theme.colors.purple10};
   }
 `;
 

@@ -32,6 +32,6 @@ export const Checkbox = styled.input`
   display: none;
 
   &:checked + ${Toggle}::before {
-    transform: translateX(-28px);
+    transform: translateX(-30px);
   }
 `;

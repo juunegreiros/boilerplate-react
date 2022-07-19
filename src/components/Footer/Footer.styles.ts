@@ -11,3 +11,17 @@ export const Link = styled.a`
   color: ${({ theme }) => theme.colors.color30};
   text-decoration: none;
 `;
+
+export const Item = styled.li``;
+
+export const IconWrapper = styled.div`
+  svg {
+    fill: ${({ theme }) => theme.colors.color30};
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+      fill: ${({ theme }) => theme.colors.color50};
+    }
+  }
+`;

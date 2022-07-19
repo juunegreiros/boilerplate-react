@@ -7,6 +7,6 @@ export const List = styled.ul`
 `;
 
 export const Link = styled.a`
-  color: ${({ theme }) => theme.colors.purple30};
+  color: ${({ theme }) => theme.colors.color30};
   text-decoration: none;
 `;

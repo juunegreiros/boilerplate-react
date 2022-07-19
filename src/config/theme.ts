@@ -1,18 +1,38 @@
-const theme = {
+const lightTheme = {
   colors: {
-    purple100: '#10002B',
-    purple90: '#240046',
-    purple80: '#3C096C',
-    purple70: '#5A189A',
-    purple60: '#7B2CBF',
-    purple50: '#9D4EDD',
-    purple40: '#C77DFF',
-    purple30: '#E0AAFF',
-    purple20: '#F1D6FF',
-    purple10: '#F8EBFF',
+    color10: '#10002B',
+    color20: '#240046',
+    color30: '#3C096C',
+    color40: '#5A189A',
+    color50: '#7B2CBF',
+    color60: '#9D4EDD',
+    color70: '#C77DFF',
+    color80: '#E0AAFF',
+    color90: '#F1D6FF',
+    color100: '#F8EBFF',
   },
 };
 
-export type ThemeTypes = typeof theme;
+const darkTheme = {
+  colors: {
+    color100: '#10002B',
+    color90: '#240046',
+    color80: '#3C096C',
+    color70: '#5A189A',
+    color60: '#7B2CBF',
+    color50: '#9D4EDD',
+    color40: '#C77DFF',
+    color30: '#E0AAFF',
+    color20: '#F1D6FF',
+    color10: '#F8EBFF',
+  },
+};
 
-export default theme;
+export type ThemeTypes = typeof lightTheme;
+export type ThemeModeTypes = 'dark' | 'light';
+export type ThemeContextTypes = {
+  theme: ThemeModeTypes;
+  changeTheme: (theme: ThemeModeTypes) => void;
+};
+
+export { lightTheme, darkTheme };

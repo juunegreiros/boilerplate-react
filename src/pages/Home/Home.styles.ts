@@ -23,6 +23,7 @@ export const Name = styled.span`
 
   &:hover {
     -webkit-text-fill-color: inherit;
+    -webkit-text-stroke-width: 0;
   }
 `;
 
@@ -32,6 +33,19 @@ export const Text = styled.p`
 `;
 
 export const Link = styled.a`
+  background-image: linear-gradient(
+    transparent 80%,
+    ${({ theme }) => theme.colors.green} 0 90%,
+    transparent 0 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0 100%;
   color: ${({ theme }) => theme.colors.green};
+  display: inline-block;
   text-decoration: none;
+  transition: background-size 0.25s;
+
+  &:hover {
+    background-size: 100% 100%;
+  }
 `;

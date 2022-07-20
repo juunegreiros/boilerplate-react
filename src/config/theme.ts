@@ -1,5 +1,8 @@
 const lightTheme = {
   colors: {
+    primary: '#F7FFF7',
+    secondary: '#292F36',
+    green: '#4ECDC4',
     color10: '#10002B',
     color20: '#240046',
     color30: '#3C096C',
@@ -15,6 +18,9 @@ const lightTheme = {
 
 const darkTheme = {
   colors: {
+    primary: '#292F36',
+    secondary: '#F7FFF7',
+    green: '#4ECDC4',
     color100: '#10002B',
     color90: '#240046',
     color80: '#3C096C',

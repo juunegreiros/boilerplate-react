@@ -8,7 +8,7 @@ export const List = styled.ul`
 `;
 
 export const Link = styled.a`
-  color: ${({ theme }) => theme.colors.color30};
+  color: ${({ theme }) => theme.colors.secondary};
   text-decoration: none;
 `;
 
@@ -16,12 +16,12 @@ export const Item = styled.li``;
 
 export const IconWrapper = styled.div`
   svg {
-    fill: ${({ theme }) => theme.colors.color30};
+    fill: ${({ theme }) => theme.colors.secondary};
     height: 30px;
     width: 30px;
 
     &:hover {
-      fill: ${({ theme }) => theme.colors.color50};
+      fill: ${({ theme }) => theme.colors.green};
     }
   }
 `;

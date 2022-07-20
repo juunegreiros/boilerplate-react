@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Toggle = styled.label`
-  background-color: ${({ theme }) => theme.colors.color20};
+  background-color: ${({ theme }) => theme.colors.secondary};
   border-radius: 1rem;
   cursor: pointer;
   height: 30px;
@@ -16,7 +16,7 @@ export const Toggle = styled.label`
   width: 60px;
 
   &::before {
-    background-color: ${({ theme }) => theme.colors.color70};
+    background-color: ${({ theme }) => theme.colors.primary};
     transition: transform 0.2s;
     border-radius: 50%;
     content: '';

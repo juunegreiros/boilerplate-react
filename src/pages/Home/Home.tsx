@@ -14,16 +14,12 @@ const Home = () => {
         </span>
       </Title>
       <Text>
-        Senior Software Engineer na <Link href='https://routable.com/'>Routable</Link> e CEO do{' '}
+        Senior Software Engineer na <Link href='https://routable.com/'>Routable</Link>, CEO do{' '}
         <Link href='https://github.com/toraline/'>Toraline</Link>, um projeto feito para ensinar e
-        incluir novas pessoas no mercado de tecnologia. Co-organizadora do{' '}
+        incluir novas pessoas no mercado de tecnologia, e co-organizadora do{' '}
         <Link href='https://sorocabajs.github.io/'>SorocabaJS</Link> e do{' '}
         <Link href='https://www.instagram.com/railsgirlssorocaba/'>Rails Girls Sorocaba</Link>.
       </Text>
-      {/* <Text>
-        Se você precisa de serviços ou quer aprender a programar, entre em contato comigo e vamos
-        conversar!
-      </Text> */}
     </Container>
   );
 };

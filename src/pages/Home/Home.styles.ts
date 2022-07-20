@@ -25,6 +25,11 @@ export const Name = styled.span`
     -webkit-text-fill-color: inherit;
     -webkit-text-stroke-width: 0;
   }
+
+  ::selection {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px ${({ theme }) => theme.colors.secondary};
+  }
 `;
 
 export const Text = styled.p`
@@ -42,6 +47,7 @@ export const Link = styled.a`
   background-size: 0 100%;
   color: ${({ theme }) => theme.colors.green};
   display: inline-block;
+  font-weight: 500;
   text-decoration: none;
   transition: background-size 0.25s;
 

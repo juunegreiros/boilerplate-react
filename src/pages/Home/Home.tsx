@@ -1,15 +1,38 @@
 import React from 'react';
-import { Title, Text, Container, Link } from './Home.styles';
+import Typewriter from 'typewriter-effect';
+import { Title, Text, Container, TitleEmph, TitleTypewritter } from './Home.styles';
 
 const Home = () => (
   <Container>
-    <Title>Olá, sou o Renan Silva </Title>
+    <Title>
+      Oi, me chamo
+      <TitleEmph>
+        Renan Silva
+        <span>
+          e sou{' '}
+          <TitleTypewritter>
+            <Typewriter
+              options={{
+                strings: [
+                  'designer gráfico.',
+                  'estudante de UX/UI.',
+                  'apaixonado por games.',
+                  'viciado em animes.',
+                  'healer.',
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 50,
+              }}
+            />
+          </TitleTypewritter>
+        </span>
+      </TitleEmph>
+    </Title>
     <Text>
-      Senior Software Engineer na <Link href='https://routable.com/'>Routable</Link>, CEO do{' '}
-      <Link href='https://github.com/toraline/'>Toraline</Link>, um projeto feito para ensinar e
-      incluir novas pessoas no mercado de tecnologia, e co-organizadora do{' '}
-      <Link href='https://sorocabajs.github.io/'>SorocabaJS</Link> e do{' '}
-      <Link href='https://www.instagram.com/railsgirlssorocaba/'>Rails Girls Sorocaba</Link>.
+      Designer gráfico migrando para UX/UI e estou procurando obter mais experiência na área!
+      Estudando diariamente conceitos de design e embarcando na jornada de projetos para me tornar
+      Designer UX Júnior.
     </Text>
   </Container>
 );

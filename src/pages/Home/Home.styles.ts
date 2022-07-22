@@ -1,37 +1,36 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  max-width: 1000px;
+  width: 70vw;
+`;
 
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.color50};
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2rem;
   margin-bottom: 1rem;
+`;
+
+export const TitleEmph = styled.span`
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: 600;
+
+  .Typewriter {
+    display: inline;
+  }
+`;
+
+export const TitleTypewritter = styled.span`
+  color: ${({ theme }) => theme.colors.orange};
 `;
 
 export const Text = styled.p`
   line-height: 1.5;
   font-size: 1.5rem;
-`;
-
-export const Link = styled.a`
-  background-image: linear-gradient(
-    transparent 80%,
-    ${({ theme }) => theme.colors.green} 0 90%,
-    transparent 0 100%
-  );
-  background-repeat: no-repeat;
-  background-size: 0 100%;
-  color: ${({ theme }) => theme.colors.green};
-  display: inline-block;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-size 0.25s;
-
-  &:hover {
-    background-size: 100% 100%;
-  }
 `;

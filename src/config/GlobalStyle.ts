@@ -7,14 +7,14 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeTypes }>`
     margin: 0;
 
     ::selection {
-      color: ${({ theme }) => theme.colors.secondary};
-      background: ${({ theme }) => theme.colors.green};
+      color: ${({ theme }) => theme.colors.primary};
+      background: ${({ theme }) => theme.colors.orange};
     }
   }
 
   body {
     background-color: ${({ theme }) => theme.colors.primary};
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: ${({ theme }) => theme.colors.secondary};
     
   }

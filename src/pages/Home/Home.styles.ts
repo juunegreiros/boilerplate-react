@@ -11,7 +11,6 @@ export const Title = styled.h1`
   flex-direction: column;
   font-size: 2rem;
   font-weight: 300;
-  line-height: 2rem;
   margin-bottom: 1rem;
 `;
 

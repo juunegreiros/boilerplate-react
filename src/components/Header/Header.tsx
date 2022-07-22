@@ -38,7 +38,7 @@ const Header: React.FC<{ theme: string; setTheme: (theme: string) => void }> = (
           </li>
         </List>
       </Navbar>
-      <ImageLink to='/'>
+      <ImageLink aria-label='Darumarts' to='/'>
         <Daruma />
       </ImageLink>
       <RightContainer>

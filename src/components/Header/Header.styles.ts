@@ -4,8 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 4.25rem;
+  padding: 0 4.25rem;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.orange};
   border-bottom-left-radius: 1.875rem;
@@ -13,7 +12,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Navbar = styled.nav`
-  align-items: center;
+  align-items: flex-end;
   display: flex;
 `;
 
@@ -26,6 +25,7 @@ export const List = styled.ul<{ bigSpace?: boolean }>`
 
 export const ImageLink = styled(Link)`
   height: auto;
+  padding: 2rem 0;
   width: 290px;
 
   svg {
@@ -39,25 +39,45 @@ export const HeaderLink = styled(NavLink)`
     ${({ theme }) => theme.colors.dark},
     ${({ theme }) => theme.colors.dark}
   );
-  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% 10%;
+  background-size: 100% 0%;
   color: ${({ theme }) => theme.colors.dark};
   font-size: 1.5rem;
+  display: flex;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   font-weight: 600;
+  height: 86px;
   padding: 0.5rem;
+  position: relative;
   text-decoration: none;
   transition-property: color background-size;
   transition-duration: 0.3s;
 
-  &:hover,
+  &:hover {
+    color: ${({ theme }) => theme.colors.orange};
+    background-size: 100% 44px;
+  }
+
   &.active {
     color: ${({ theme }) => theme.colors.orange};
     background-size: 100% 100%;
   }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background-color: ${({ theme }) => theme.colors.dark};
+    transition: all 0.15s;
+  }
 `;
 
 export const RightContainer = styled.div`
+  align-self: center;
   display: flex;
   gap: 1rem;
 `;

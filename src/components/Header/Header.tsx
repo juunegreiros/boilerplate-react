@@ -16,7 +16,6 @@ import { ReactComponent as LinkedinLogo } from '../../assets/linkedin.svg';
 import { ReactComponent as GithubLogo } from '../../assets/github.svg';
 import { ReactComponent as BehanceLogo } from '../../assets/behance.svg';
 import { ReactComponent as Daruma } from '../../assets/daruma.svg';
-import { ReactComponent as DarumaDark } from '../../assets/daruma-dark.svg';
 
 const Header: React.FC<{ theme: string; setTheme: (theme: string) => void }> = ({
   theme,

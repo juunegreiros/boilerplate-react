@@ -11,5 +11,9 @@ export const Main = styled.main`
   justify-content: center;
   display: flex;
   flex-grow: 1;
-  padding: 3.25rem 7.375rem;
+  padding: 2.5rem 7.375rem;
+
+  @media (min-width: ${({ theme }) => theme.media.desktop}px) {
+    padding: 3.25rem 7.375rem;
+  }
 `;

@@ -8,10 +8,8 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   justify-content: center;
-  max-width: 50vw;
+  display: flex;
+  flex-grow: 1;
+  padding: 3.25rem 7.375rem;
 `;

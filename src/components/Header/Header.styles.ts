@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -26,7 +26,6 @@ export const List = styled.ul<{ bigSpace?: boolean }>`
 
 export const ImageLink = styled(Link)`
   height: auto;
-  margin-right: 2.5rem;
   width: 290px;
 
   svg {
@@ -35,7 +34,7 @@ export const ImageLink = styled(Link)`
   }
 `;
 
-export const HeaderLink = styled(Link)`
+export const HeaderLink = styled(NavLink)`
   background-image: linear-gradient(
     ${({ theme }) => theme.colors.dark},
     ${({ theme }) => theme.colors.dark}
@@ -51,7 +50,8 @@ export const HeaderLink = styled(Link)`
   transition-property: color background-size;
   transition-duration: 0.3s;
 
-  &:hover {
+  &:hover,
+  &.active {
     color: ${({ theme }) => theme.colors.orange};
     background-size: 100% 100%;
   }

@@ -28,19 +28,19 @@ const Header: React.FC<{ theme: string; setTheme: (theme: string) => void }> = (
   };
   return (
     <HeaderContainer>
+      <ImageLink aria-label='Darumarts' to='/'>
+        <Daruma />
+      </ImageLink>
       <Navbar>
         <List bigSpace>
           <li>
-            <HeaderLink to='/'>Sobre mim</HeaderLink>
+            <HeaderLink to='/about-me'>Sobre mim</HeaderLink>
           </li>
           <li>
             <HeaderLink to='/projects'>Projetos</HeaderLink>
           </li>
         </List>
       </Navbar>
-      <ImageLink aria-label='Darumarts' to='/'>
-        <Daruma />
-      </ImageLink>
       <RightContainer>
         <nav>
           <List>

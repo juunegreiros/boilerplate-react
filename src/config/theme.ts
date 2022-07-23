@@ -1,4 +1,12 @@
+const theme = {
+  media: {
+    desktop: 1400,
+    tablet: 800,
+  },
+};
+
 const lightTheme = {
+  ...theme,
   colors: {
     primary: '#F5EFED',
     secondary: '#252323',
@@ -9,6 +17,7 @@ const lightTheme = {
 };
 
 const darkTheme = {
+  ...theme,
   colors: {
     primary: '#252323',
     secondary: '#F5EFED',

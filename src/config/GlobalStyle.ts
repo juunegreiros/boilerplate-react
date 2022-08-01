@@ -59,7 +59,6 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeTypes }>`
     background-color: ${({ theme }) => theme.colors.primary};
     font-family: 'Rubik', sans-serif;
     color: ${({ theme }) => theme.colors.secondary};
-    
   }
 `;
 

@@ -22,7 +22,8 @@
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
     "react/function-component-definition": "off",
-    "no-restricted-exports": "off"
+    "no-restricted-exports": "off",
+    "import/prefer-default-export": "off"
   },
   "settings": {
     "import/resolver": {

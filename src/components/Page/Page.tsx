@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { Container, Main } from './Page.styles';
+import { Container } from './Page.styles';
 import GlobalStyle from '../../config/GlobalStyle';
 import { lightTheme, darkTheme } from '../../config/theme';
 import Header from '../Header';
@@ -15,9 +15,9 @@ const Page: React.FC = () => {
       <BrowserRouter>
         <Container>
           <Header theme={theme} setTheme={setTheme} />
-          <Main>
+          <main>
             <Routes />
-          </Main>
+          </main>
         </Container>
       </BrowserRouter>
     </ThemeProvider>
